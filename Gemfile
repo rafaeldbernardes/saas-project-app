@@ -5,6 +5,8 @@ gem 'rails', '4.0.1'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
+gem 'devise'
+gem 'milia'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -44,3 +46,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem "recaptcha", require: "recaptcha/rails"
+gem "activerecord-session_store", github: "rails/activerecord-session_store"
