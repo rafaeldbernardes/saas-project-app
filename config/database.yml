@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  host: localhost
+  encoding: unicode
+  pool: 5
+  username: postgres
+  password: 93pbf34K8p7A
+
+development:
+  <<: *default
+  database: sass-project-app_development
+
+test:
+  <<: *default
+  database: sass-project-app_test
+
+production:
+  <<: *default
+  database: sass-project-app_production
