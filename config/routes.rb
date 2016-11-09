@@ -1,5 +1,9 @@
 SassProjectApp::Application.routes.draw do
 
+  resources :tenants do
+    resources :projects
+  end
+  resources :projects
   resources :members
 
   get "home/index"
