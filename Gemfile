@@ -9,6 +9,7 @@ gem 'rails', '4.2.0'
 gem 'pg'
 gem 'devise'
 gem 'milia'
+gem 'aws-sdk'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
