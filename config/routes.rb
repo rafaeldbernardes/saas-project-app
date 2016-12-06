@@ -1,9 +1,12 @@
 SassProjectApp::Application.routes.draw do
 
+  resources :user_projects
   resources :artifacts
-
   resources :tenants do
-    resources :projects
+    resources :projects do
+      get 'users', on: :member
+      put 'add_user', on: :member
+    end
   end
   resources :projects
   resources :members
